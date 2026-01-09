@@ -30,8 +30,7 @@ Nach Abschluss der Transcodierung werden die erzeugten Ausgabedateien wieder im 
 
 Dieses Vorgehen entspricht einem typischen cloudbasierten Video-on-Demand-Workflow und verdeutlicht, wie Rechenressourcen, Speicher und Auslieferung in der Cloud getrennt voneinander eingesetzt werden.
 
-![FFMPEG Encoding](ffmpeg-coding.png)
-
+![FFMPEG Encoding](../../assets/Versuch1/ffmpeg-coding.png)
 ## AWS WebGUI
 
 ### Log-in
@@ -41,21 +40,21 @@ Für diesen Praktikumsversuch erhalten die Studierenden die benötigten Zugangsd
 Zur Anmeldung auf StackIT gelangt man über diesen Link: https://portal.stackit.cloud/
 
 
-![Login User](login-user.jpg)
+![Login User](../../assets/Versuch1/login-user.jpg)
 
 **Hier kann der bereitgestellte Username aus der E-Mail entnommen werden**
 
-![Login password](login-pw.jpg)
+![Login password](../../assets/Versuch1/login-pw.jpg)
 
 **Hier kann das bereitgestellte Password aus der E-Mail entnommen werden**
 
-![Login mfa](mfa-login.jpg)
+![Login mfa](../../assets/Versuch1/mfa-login.jpg)
 
 **Hier besteht die Möglichkeit eine 2 Faktor Authentifizierung einzugeben. Dies kann wahlweise mit der Uni-Mail oder mit einer App erfolgen. Als App für das Handy empfiehlt sich hier Microsoft Authenticator https://support.microsoft.com/de-de/account-billing/microsoft-authenticator-herunterladen-351498fc-850a-45da-b7b6-27e523b8702a**
 
-![Landigpage region](Landingpage-region.jpg)
+![Landingpage region](../../assets/Versuch1/Landingpage-region.jpg)
 
 **Auf der Landingpage sollte in der oberen Leiste das richtige Projekt und die region EU01 - (Deutschland Süd) ausgewählt werden**
 
-![AWS WebGUI](../assets/versuch1/aws_dashboard.png)
+![AWS WebGUI](../../assets/Versuch1/aws_dashboard.png)
 
