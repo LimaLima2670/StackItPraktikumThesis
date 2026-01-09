@@ -5,14 +5,13 @@ Dazu wird der **STACKIT Object Storage** verwendet, ein S3-kompatibler Objektspe
 
 **Der Zugriff erfolgt über das **STACKIT Portal** im Browser. Auf der rechten Reiterseite. Hier findet man unter dem Reiter Computing den Unterpunkt "Object storage"**
 
-![ObjectSTorage](object-storage.jpg)
+![ObjectSTorage](../../assets/Versuch1/object-storage.jpg)
 
 **Hier muss der Objektspeicher manuell aktiviert werden. Hierfür muss nur der vorhandene Button "Objektspeicher aktivieren" geklickt werden.**
 
 **Nun bitte zu dem Unterreiter Buckets navigieren**
 
-![ObjectSTorage](Bucket-Select.jpg)
-
+![ObjectSTorage](../../assets/Versuch1/Bucket-Select.jpg)
 **
 
 
@@ -33,7 +32,7 @@ Dazu wird der **STACKIT Object Storage** verwendet, ein S3-kompatibler Objektspe
 
 **Klicken Sie auf das Feld "+ Bucket erstellen"**
 
-![S3 Dashboard](create-bucket.jpg)
+![S3 Dashboard](../../assets/Versuch1/create-bucket.jpg)
 
 **Die Namensvergabe soll nach einem einhitlichen Standard erfolgen:  <span style="color:orange; font-weight:bold; font-size:1.2em;">[namenachname-Letzten 4 Ziffern Ihrer Matrikelnummer]. Beispiel: [maxmustermann-4567]**  </span><br>
 
@@ -68,11 +67,12 @@ Diese werden später in der Kommandozeile verwendet.
 1. Navigieren Sie zu:  
    **Object Storage → Anmeldeinformationen & Gruppen**
 
-![S3 Dashboard](Anmeldeinformation1.jpg)   
+![S3 Dashboard](../../assets/Versuch1/Anmeldeinformation1.jpg)
+
 
 2. Klicken Sie auf **„Anmeldeinformationen erstellen“**
 
-![S3 Dashboard](createanmeldung.jpg)
+![S3 Dashboard](../../assets/Versuch1/createanmeldung.jpg)
 
 3. Bestätigen Sie die Erstellung.
  
@@ -149,7 +149,7 @@ Die VM übernimmt in diesem Versuch die Rolle eines **Rechenknotens**, auf dem e
 - Transcoding-Parameter
 - Ablauf des Workflows
 
-![S3 Dashboard](StackApp.jpg)
+![S3 Dashboard](../../assets/Versuch1/StackApp.jpg)
 
 ### Ablauf im Überblick
 
@@ -176,13 +176,13 @@ Aus diesem Grund muss vor der Einrichtung der eigentlichen Rechenressourcen zun�
 
 **Bitte navigieren SIe an der linken Seite zu dem Reiter richtung Netzwerk:**
 
-![S3 Dashboard](netzwerk.jpg)
+![S3 Dashboard](../../assets/Versuch1/netzwerk.jpg)
 
 **Klicken Sie auf Netzwerk erstellen**
 
 **Es erscheint die folgende Maske**
 
-![S3 Dashboard](netzwerkerst.jpg)
+![S3 Dashboard](../../assets/Versuch1/netzwerkerst.jpg)
 
 **Geben Sie als Namen Ihren namennachnamen + letzte 4 Nummern ihrer Matrikelnummer an**
 
@@ -246,7 +246,7 @@ Navigieren Sie in der linken Seitenleiste zu:
 
 Networks → Security Groups
 
-![S3 Dashboard](securitygroups.jpg)
+![S3 Dashboard](../../assets/Versuch1/securitygroups.jpg)
 
 In der Übersicht wird mindestens eine Security Group mit dem Namen `default` angezeigt. Diese Security Group ist in der Regel bereits dem Server zugewiesen und kann für den SSH-Zugriff verwendet werden.
 
@@ -284,7 +284,7 @@ Computing → Server
 
 **Navigieren Sie zu **Computing** / Server**
 
-![S3 Dashboard](computingserver.jpg)
+![S3 Dashboard](../../assets/Versuch1/computingserver.jpg)
 
 **Klicken Sie auf Server erstellen**
 
@@ -326,7 +326,7 @@ Einstellungen prüfen
 
 Nun sollten SIe ihren erstellten Server sehen können
 
-![S3 Dashboard](serverup.jpg)
+![S3 Dashboard](../../assets/Versuch1/serverup.jpg)
 
 ## Zuweisung einer öffentlichen IP-Adresse zur virtuellen Maschine
 
@@ -342,12 +342,12 @@ Navigieren Sie im linken Menü des Servers zu:
 
 Network → Public IP Address
 
-![S3 Dashboard](securitygroups.jpg)
+![S3 Dashboard](../../assets/Versuch1/securitygroups.jpg)
 
 
 Diese muss zu guter letzt einfach nur noch mit dem Server verbunden werden:
 
-![S3 Dashboard](ipconnect.jpg)
+![S3 Dashboard](../../assets/Versuch1/ipconnect.jpg)
 
 
 ## Testen der Verbindung zur virtuellen Maschine per SSH
@@ -366,7 +366,7 @@ Test-NetConnection 192.214.178.41 -Port 22
 ```
 Folgende Ausgabe ist hierbei zu erwarten:
 
-![S3 Dashboard](cmdtest.jpg)
+![S3 Dashboard](../../assets/Versuch1/cmdtest.jpg)
 
 
 
