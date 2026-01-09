@@ -176,7 +176,7 @@ Aus diesem Grund muss vor der Einrichtung der eigentlichen Rechenressourcen zun√
 
 **Bitte navigieren SIe an der linken Seite zu dem Reiter richtung Netzwerk:**
 
-![S3 Dashboard](../../assets/Versuch1/netzwerk.jpg)
+![S3 Dashboard](../../assets/Versuch1/Netzwerk.jpg)
 
 **Klicken Sie auf Netzwerk erstellen**
 
