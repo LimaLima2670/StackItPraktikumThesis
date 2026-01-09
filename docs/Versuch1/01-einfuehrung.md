@@ -8,7 +8,8 @@ Der Versuch basiert auf der Cloud-Plattform STACKIT als Infrastruktur-Anbieter s
 
 ### Cloud-Speicher (*Object-Storage*)
 
-![STACKIT Object Storage](../assets/Versuch1/object-storage.jpg
+![STACKIT Object Storage](../assets/Versuch1/object-storage.jpg)
+
 
 Cloud-Speicher funktioniert im Grundprinzip ähnlich wie bekannte Dienste wie Dropbox oder Google Drive: Dateien werden zentral gespeichert und können bei Bedarf wieder abgerufen werden. In professionellen Cloud-Umgebungen kommt dafür jedoch meist Objektspeicher (Object Storage) zum Einsatz.
 
