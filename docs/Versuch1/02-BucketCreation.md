@@ -11,7 +11,7 @@ Dazu wird der **STACKIT Object Storage** verwendet, ein S3-kompatibler Objektspe
 
 **Nun bitte zu dem Unterreiter Buckets navigieren**
 
-![ObjectSTorage](../../assets/Versuch1/Bucket-Select.jpg)
+![ObjectSTorage](../../assets/Versuch1/Bucket-select.jpg)
 **
 
 
