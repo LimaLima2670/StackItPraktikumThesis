@@ -1,0 +1,51 @@
+site_name: Bachelorarbeit – Cloud-basiertes Video-Transcoding
+site_description: Dokumentation der Bachelorarbeit im Studiengang Medientechnik
+site_author: Leon Ueberholz
+
+site_url: https://limalima2670.github.io/Bachelorthesis
+repo_url: https://github.com/LimaLima2670/Bachelorthesis
+edit_uri: ""
+
+theme:
+  name: material
+  language: de
+  features:
+    - toc.integrate
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Umschalten zu Lightmode
+      primary: light green
+      accent: light green
+
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Umschalten zu Darkmode
+      primary: light green
+      accent: light green
+
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - footnotes
+
+plugins:
+  - search:
+      lang: de
+
+nav:
+  - Überblick: index.md
+  - Einleitung: 01_einleitung.md
+  - Technische Grundlagen: 02_grundlagen.md
+  - Konzeption des Versuchsaufbaus: 03_konzept.md
+  - Technische Umsetzung: 04_umsetzung.md
+  - Evaluation und Analyse: 05_evaluation.md
+  - Fazit und Ausblick: 06_fazit.md
