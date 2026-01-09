@@ -1,5 +1,5 @@
 
-# mvs-aws-bachelorthesis
+# mvs-stackit-praktikum-bachelorthesis
 
 Dieses Repository beinhaltet Skripte und Konfigurationsdateien zur Erstellung, Konfiguration und Bereinigung einer Übungs- und Versuchs­umgebung für praktische Untersuchungen im Bereich Cloud-basiertes Video-Transcoding und Content-Auslieferung. 
 
