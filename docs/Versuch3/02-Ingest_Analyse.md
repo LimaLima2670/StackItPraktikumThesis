@@ -36,7 +36,7 @@ cd workflow-test
 
 **Dies sollte nun folgendermaßen ausshen:**
 
-![ObjectSTorage](mkdir.jpg)
+![ObjectSTorage](../../assets/Versuch3/mkdir.jpg)
 
 **Nun erstellen wir ein neues Item. Dieses nennen wir Workflow.log und wird folgendermaßen angelegt:**
 
@@ -44,7 +44,7 @@ cd workflow-test
 New-Item workflow.log
 ```
 
-![ObjectSTorage](newitem.jpg)
+![ObjectSTorage](../../assets/Versuch3/newitem.jpg)
 
 
 **Geben Sie den folgenden Befehl ein:**
@@ -109,7 +109,7 @@ curl.exe -I $URL
 ssh @Ubuntu<IpdesServers>
 ```
 
-![ObjectSTorage](vmcon.jpg)
+![ObjectSTorage](../../assets/Versuch3/vmcon.jpg)
 
 **Erstellen Sie hier bitte ein neues Verzeichnis:**
 
@@ -127,7 +127,7 @@ curl -o testvideo_460p.mp4 https://<DeinDomainname>.global.ssl.fastly.net/testvi
 ```
 **Sie sollten folgenden Auswurf bekommen:**
 
-![ObjectSTorage](downloadsuc.jpg)
+![ObjectSTorage](../../assets/Versuch3/downloadsuc.jpg)
 
 
 
@@ -143,7 +143,7 @@ testvideo_1080p.mp4
 ```
 
 **Dies sieht dann so aus:**
-![ObjectSTorage](stream.jpg)
+![ObjectSTorage](../../assets/Versuch3/stream.jpg)
 
 **Kopieren SIe sich die Ausgabe in ein separates Textdokument**
 
