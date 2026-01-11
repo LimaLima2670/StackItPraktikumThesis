@@ -64,7 +64,7 @@ https://leonueberholz.global.ssl.fastly.net/testvideo_1080p.mp4
 
 **Das sollte dann so aussehen:**
 
-![ObjectSTorage](ttfb.jpg)
+![ObjectSTorage](../../assets/Versuch2/ttfb.jpg)
 
 ## Lernergebnisse
 
