@@ -8,7 +8,7 @@ Als CDN-Anbieter wird **Fastly** verwendet.
 ---
 **Doch was genau bringt uns das eigentlich und wofür machen wir das ganze hier. Mit einer Grafik wird versucht zu erklären was die klaren Vorteile hierbei sind**
 
-![ObjectSTorage](cdnexpl.jpg)
+![ObjectSTorage](../../assets/Versuch2/cdnexpl.jpg)
 
 **Verstanden? Dann kann es nun losgehen! Wir gehen das wieder Schritt für Schritt durch!**
 
@@ -31,7 +31,7 @@ ssh@ubuntu<DEINESERVERIP>
 
 **Sie kommen wieder auf die folgende Maske:**
 
-![ObjectSTorage](vmconnect.jpg)
+![ObjectSTorage](../../assets/Versuch2/vmconnect.jpg)
 
 
 **Nun prüfen ob die Videos draufliegen:**
@@ -60,13 +60,13 @@ Der Object Storage übernimmt die Rolle des **Origin Servers**.
 
 **Navigieren Sie bitte zur Internetseite von Fastly https://www.fastly.com/ und melden Sie sich dort mit ihren Credentials an:** 
 
-![ObjectSTorage](fastlylogin.jpg)
+![ObjectSTorage](../../assets/Versuch2/fastlylogin.jpg)
 
 *leave blank for further instructions*
 
 **Sie sollten nun die folgende Fastly Startseite vor sich sehen.**
 
-![ObjectSTorage](mainfastly.jpg)
+![ObjectSTorage](../../assets/Versuch2/mainfastly.jpg)
 
 ## Schritt 1: Neuen Fastly Service erstellen
 
@@ -82,13 +82,13 @@ Da für diesen Versuch noch kein CDN-Service existiert, muss zunächst ein neuer
 
 Im oberen rechten Bereich des Dashboards wird der Button **Create service** ausgewählt.
 
-![ObjectSTorage](createservices.jpg)
+![ObjectSTorage](../../assets/Versuch2/createservices.jpg)
 
 **Wählen Sie dort bitte CDN**
 
 **Folgende Maske sollte nun erscheinen:**
 
-![ObjectSTorage](servicemaskfastly.jpg)
+![ObjectSTorage](../../assets/Versuch2/servicemaskfastly.jpg)
 
 **Tätigen Sie dort bitte folgende Einstellungen:**
 
@@ -105,7 +105,7 @@ Im oberen rechten Bereich des Dashboards wird der Button **Create service** ausg
 
 **So sollte es nun bei Ihnene aussehen:**
 
-![ObjectSTorage](servicedone.jpg)
+![ObjectSTorage](../../assets/Versuch2/servicedone.jpg)
 
 
 
@@ -146,7 +146,7 @@ ssh ubuntu@<IP-DEINER-VM>
 ```
 **Sie müssten sich hier wieder finden.**
 
-![ObjectSTorage](vmconnect2.jpg)
+![ObjectSTorage](../../assets/Versuch2/vmconnect2.jpg)
 
 **Nun wird die Datei angelegt die uns die BErechtigung geben soll. Geben Sie hierfür folgendes ein.**
 
@@ -155,7 +155,7 @@ nano public-read.json
 ```
 **Die Maske der Powershell sollte nun so aussehen:**
 
-![ObjectSTorage](nano.jpg)
+![ObjectSTorage](../../assets/Versuch2/nano.jpg)
 
 **Geben Sie nun folgenden Befehl dort ein:**
 
@@ -181,7 +181,7 @@ nano public-read.json
 
 **Sie befinden sich wieder auf der Hauptmaske**
 
-![ObjectSTorage](nanodone.jpg)
+![ObjectSTorage](../../assets/Versuch2/nanodone.jpg)
 
 ---
 **Nun wird die Policy angewandt**
@@ -205,7 +205,7 @@ https://<namenachname>.global.ssl.fastly.net/testvideo_1080p.mp4
 
 **Sie sollten folgende Ausgabe im Browser erhalten:**
 
-![ObjectSTorage](rabbitfastly.jpg)
+![ObjectSTorage](../../assets/Versuch2/rabbitfastly.jpg)
 
 **Jetzt interessiert uns noch von wo diese Ablieferung stattfindet. Hierfür erinnern wir uns wieder an das Modul CM1 bei dem wir verschiedene Tools kenennlernern durften um eine Hostdadresse genauer zu inspizieren**
 
