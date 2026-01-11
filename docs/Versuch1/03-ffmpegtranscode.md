@@ -47,7 +47,7 @@ Nach erfolgreicher Anmeldung befindet man sich auf dem Linux-System der virtuell
 
 **Nach erfolgreicher Eingabe sollte folgende Ausgabe in der Powershell zu erwarten sein**
 
-![S3 Dashboard](cmdsuccesful.jpg)
+![S3 Dashboard](../../assets/Versuch1/cmdsuccesful.jpg)
 
 ## Aktueller Stand des Versuchs
 
@@ -80,7 +80,7 @@ Bedeutet:**Geben Sie folgende Befehle in das gleiche Powershellfenster ein, wo s
 
 **Tipp:** Sie können dies kontrollieren indem vor ihrem Eingabefeld in grüner Schrift ihr Server angezeigt wird
 
-![S3 Dashboard](cmdservergreen.jpg)
+![S3 Dashboard](../../assets/Versuch1/cmdservergreen.jpg)
 
 
 **Geben Sie bitte nun dort folgenden Befehl ein:**
@@ -97,7 +97,7 @@ sudo apt install ffmpeg -y
 ```
 **Nach erfolgreicher Ausführung sollten sie folgende Meldung bekommen:**
 
-![S3 Dashboard](nonono.jpg)
+![S3 Dashboard](../../assets/Versuch1/nonono.jpg)
 
 ## Zugriff auf den Object Storage von der virtuellen Maschine
 
@@ -122,7 +122,7 @@ sudo snap install aws-cli --classic
 
 **Folgende Ausgabe sollte daraus erfolgen:**
 
-![S3 Dashboard](awsvm.jpg)
+![S3 Dashboard](../../assets/Versuch1/awsvm.jpg)
 
 
 **Prüfen Sie die Installation bitte mit folgendem Befehl**
@@ -154,7 +154,7 @@ Falls dies nicht der Fall ist, können die Zugangsdaten jederzeit erneut erstell
 Eine Anleitung dazu finden Sie im vorherigen Kapitel. 🙂
 </div>
 
-![S3 Dashboard](awskeys.jpg)
+![S3 Dashboard](../../assets/Versuch1/awskeys.jpg)
 
 ### Test des Zugriffs auf den Object Storage von StackIT
 
@@ -181,7 +181,7 @@ aws s3 cp s3://<DEINBUCKETNAME>/testvideo.mp4 ./testvideo.mp4 \
 ```
 **Folgendes Ergebis ist zu erwarten:**
 
-![S3 Dashboard](downloadtovm.jpg)
+![S3 Dashboard](../../assets/Versuch1/downloadtovm.jpg)
 
 **Auch hier gilt wieder testen:**
 
@@ -242,14 +242,14 @@ hls_output/master.m3u8
 
 **Sie sollten sowas in etwa sehen:**
 
-![S3 Dashboard](manifeestcreated.jpg)
+![S3 Dashboard](../../assets/Versuch1/manifeestcreated.jpg)
 
 **Danach kann geprüft werden ob die Manifestdateien wirklich angelegt worden sind:**
 
 ```bash
 ls -lh hls_output
 ```
-![S3 Dashboard](checkhls.jpg)
+![S3 Dashboard](../../assets/Versuch1/checkhls.jpg)
 
 Anzeigen der Manifestdatei
 
@@ -431,7 +431,7 @@ aws s3 cp testvideo_480p.mp4 s3://<DEINBUCKETNAME>/ \
 
 **Das Ergebnis sollte so aussehen:**
 
-![S3 Dashboard](bucketuploaded.jpg)
+![S3 Dashboard](../../assets/Versuch1/bucketuploaded.jpg)
 
 
 **Nach Abschluss des Uploads wird überprüft, ob die Dateien erfolgreich im Object Storage abgelegt wurden:**
@@ -443,12 +443,7 @@ scp ubuntu@192.214.178.41:~/transcoded_download/testvideo_1080p.mp4 "$env:USERPR
 
 **Wiederholen Sie diesen Vorgang auch für die anderen transcodierten Videos. Tragen Sie diese Commands auch wieder in die Arbeitsmappe ein**
 
-
-
-
-![S3 Dashboard](uploadedintobucket.jpg)
-
-
+![S3 Dashboard](../../assets/Versuch1/uploadedintobucket.jpg)
 
 ## Download der transcodierten Dateien und Analyse mit MediaInfo
 
@@ -477,7 +472,7 @@ scp ubuntu@192.214.178.41:~/transcoded_download/testvideo_1080p.mp4 "$env:USERPR
 Nach dem Download aus der virtuellen Maschine liegen die transcodierten Videodateien lokal auf dem eigenen Rechner, z. B. auf dem Desktop.  
 Im nächsten Schritt werden diese Dateien mit dem Analysewerkzeug *MediaInfo* untersucht.
 
-![S3 Dashboard](mediainfo.jpg)
+![S3 Dashboard](../../assets/Versuch1/mediainfo.jpg)
 
 ### Vorbereitung
 
@@ -503,7 +498,7 @@ MediaInfo zeigt unter anderem folgende Parameter an:
 - Framerate
 - Containerformat
 
-![S3 Dashboard](mediainfoui.jpg)
+![S3 Dashboard](../../assets/Versuch1/mediainfoui.jpg)
 
 
 **Darunter sollten Sie jetzt Werte angezeigt bekommen wie bspw: Format, Formatprofil,...**
