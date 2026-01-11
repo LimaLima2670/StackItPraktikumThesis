@@ -40,7 +40,7 @@ curl.exe -I "https://<username>.global.ssl.fastly.net/testvideo_1080p.mp4"
 ```
 **Die Ausgabe sollte nun wie folgt aussehen:**
 
-![ObjectSTorage](2ndcall.jpg)
+![ObjectSTorage](../../assets/Versuch2/2ndcall.jpg)
 
 <div style="
   border: 2px solid #ffffff;
