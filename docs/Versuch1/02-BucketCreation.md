@@ -181,11 +181,24 @@ Ein eigenes Netzwerk muss nicht erstellt werden..**
 
 ![S3 Dashboard](../../assets/Versuch1/navinet.jpg)
 
-**Dort sollte nun ein bereits erstelltes Netzwerk zu sehen sein. Wählen Sie diese
+Das vorhandene Netzwerk muss nicht manuell mit anderen Komponenten verbunden werden.
 
-Also als Beispiel: **lelugoue4567**
+Bei der späteren Erstellung von Rechenressourcen (z. B. Compute-Instanzen, Transcoder oder Services) wird dieses Netzwerk direkt ausgewählt.
+Die jeweilige Ressource wird dadurch automatisch Teil des Netzwerks.
 
-**Der Rest kann unverändert gelassen werden. Klicken Sie danach auf Kostenpflichtig bestellen**
+Eine separate Kopplung oder zusätzliche Konfiguration des Netzwerks ist nicht erforderlich.
+
+<div style="
+  border: 2px solid #ffffff;
+  padding: 14px;
+  border-radius: 6px;
+  margin: 14px 0;
+">
+  <span style="color:cyan; font-weight:bold; font-size:1.2em;">
+    Aufgabe:
+  </span><br>
+  Überprüfen Sie den Ihnen zugewiesenen Adressbereich, die konfigurierten DNS-Server sowie die Routing-Tabelle. Dokumentieren Sie Ihre Ergebnisse in der Abgabemappe.<br>
+</div>
 
 
 ## SSH-Schlüssel für den Serverzugang erstellen
