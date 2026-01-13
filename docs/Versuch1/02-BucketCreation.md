@@ -182,9 +182,9 @@ Aus diesem Grund muss vor der Einrichtung der eigentlichen Rechenressourcen zun√
 
 ![S3 Dashboard](../../assets/Versuch1/network.jpg)
 
-**Klicken Sie auf Netzwerk erstellen**
+- **Klicken Sie auf Create Network**
 
-**Es erscheint die folgende Maske**
+- **Es erscheint die folgende Maske**
 
 ![S3 Dashboard](../../assets/Versuch1/networkcreate.jpg)
 
