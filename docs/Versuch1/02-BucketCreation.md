@@ -70,9 +70,9 @@ Diese werden später in der Kommandozeile verwendet.
 ![S3 Dashboard](../../assets/Versuch1/credentials.jpg)
 
 
-2. Klicken Sie auf **„Anmeldeinformationen erstellen“**
+2. Klicken Sie auf **„Create Credentials Group“ und geben sie den Namen HDSNamen+ruleset**
 
-![S3 Dashboard](../../assets/Versuch1/createanmeldung.jpg)
+![S3 Dashboard](../../assets/Versuch1/ruleset.jpg)
 
 3. Bestätigen Sie die Erstellung.
  
