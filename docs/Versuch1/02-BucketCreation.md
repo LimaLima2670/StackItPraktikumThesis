@@ -199,13 +199,27 @@ Also als Beispiel: **lelugoue4567**
 
 Für den Zugriff auf den Linux-Server wird eine Anmeldung per **SSH-Schlüssel** verwendet. Dabei besteht ein Schlüssel immer aus einem **privaten** und einem **öffentlichen** Teil. In der STACKIT-Weboberfläche wird **nur der öffentliche Schlüssel** hinterlegt.
 
-#### Schritt 1: SSH-Schlüssel lokal erzeugen (Windows)
+#### Schritt 1: SSH-Schlüsselpaar erzeugen (plattformunabhängig)
 
-1. Öffnen Sie **PowerShell**.
-2. Erstellen Sie einen neuen SSH-Schlüssel mit folgendem Befehl:
+Das SSH-Schlüsselpaar wird über den folgenden Online-Generator erzeugt:
+
+https://8gwifi.org/sshfunctions.jsp
+
+![S3 Dashboard](../../assets/Versuch1/keykeykey.jpg)
+
+1.Öffnen Sie die oben genannte Webseite.
+2.Wählen Sie als Algorithmus RSA.
+3.Erzeugen Sie ein neues Schlüsselpaar.
+4. Laden Sie:
+- den Public Key
+- den Private Key
+
+### Schritt 2: Private Key lokal speichern
+
+Speichern Sie den privaten Schlüssel lokal auf Ihrem Rechner, z. B. unter folgendem Namen:
 
 ```bash
-ssh-keygen -t ed25519
+priv-key-stackit.pk
 ```
 
 3. Bestätigen Sie alle Rückfragen mit **Enter** (Standardpfad und kein Passwort).
