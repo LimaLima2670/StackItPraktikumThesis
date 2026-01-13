@@ -32,7 +32,7 @@ Dazu wird der **STACKIT Object Storage** verwendet, ein S3-kompatibler Objektspe
 
 **Klicken Sie auf das Feld "+ Bucket erstellen"**
 
-![S3 Dashboard](../../assets/Versuch1/bucket-created.jpg)
+![S3 Dashboard](../../assets/Versuch1/create-bucket.jpg)
 
 **Die Namensvergabe soll nach einem einhitlichen Standard erfolgen:  <span style="color:orange; font-weight:bold; font-size:1.2em;">[namenachname-Letzten 4 Ziffern Ihrer Matrikelnummer]. Beispiel: [maxmustermann-4567]**  </span><br>
 
