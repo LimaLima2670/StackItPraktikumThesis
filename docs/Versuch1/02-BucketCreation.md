@@ -250,7 +250,7 @@ Navigieren Sie in der linken Seitenleiste zu:
 
 Networks → Security Groups
 
-![S3 Dashboard](../../assets/Versuch1/createsecugru.jpg)
+![S3 Dashboard](../../assets/Versuch1/createsecugroup.jpg)
 
 In der Übersicht wird mindestens eine Security Group mit dem Namen `default` angezeigt. Diese Security Group ist in der Regel bereits dem Server zugewiesen und kann für den SSH-Zugriff verwendet werden.
 
