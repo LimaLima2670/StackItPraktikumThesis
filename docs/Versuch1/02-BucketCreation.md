@@ -188,9 +188,9 @@ Aus diesem Grund muss vor der Einrichtung der eigentlichen Rechenressourcen zun√
 
 ![S3 Dashboard](../../assets/Versuch1/networkcreate.jpg)
 
-**Geben Sie als Namen Ihren namennachnamen + letzte 4 Nummern ihrer Matrikelnummer an**
+**Geben Sie als Namen Ihren HDS-Namen + letzte 4 Nummern ihrer Matrikelnummer an**
 
-Also: **maxmustermann4567**
+Also als Beispiel: **lelugoue4567**
 
 **Der Rest kann unver√§ndert gelassen werden. Klicken Sie danach auf Kostenpflichtig bestellen**
 
