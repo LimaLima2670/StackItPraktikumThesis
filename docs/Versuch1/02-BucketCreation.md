@@ -186,7 +186,7 @@ Aus diesem Grund muss vor der Einrichtung der eigentlichen Rechenressourcen zun√
 
 **Es erscheint die folgende Maske**
 
-![S3 Dashboard](../../assets/Versuch1/netzwerkerst.jpg)
+![S3 Dashboard](../../assets/Versuch1/networkcreate.jpg)
 
 **Geben Sie als Namen Ihren namennachnamen + letzte 4 Nummern ihrer Matrikelnummer an**
 
