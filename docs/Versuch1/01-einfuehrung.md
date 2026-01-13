@@ -19,7 +19,7 @@ Für diesen Praktikumsversuch wird STACKIT Object Storage verwendet. Über die W
 
 ⚠️ Achtung – Kosten
 Für gespeicherte Daten fallen laufende Kosten an, außerdem können Kosten für den Datenabruf entstehen. Bei den im Rahmen dieses Versuchs verwendeten kleinen Datenmengen sind diese Kosten sehr gering. Bei größeren Projekten mit vielen oder sehr großen Dateien können die Speicher- und Übertragungskosten jedoch deutlich steigen.
-### Transcodierer (*AWS Elemental MediaConvert*)
+### Transcodierer (*über Virtual-Machine*)
 
 
 STACKIT stellt keinen eigenen, spezialisierten Transcoding-Dienst bereit. Stattdessen erfolgt die Verarbeitung von Medieninhalten über virtuelle Maschinen, die mit dem Produkt STACKIT Compute Engine bereitgestellt werden. Eine virtuelle Maschine kann dabei wie ein normaler Server betrachtet werden, auf dem eigene Software ausgeführt wird.
@@ -31,7 +31,6 @@ Nach Abschluss der Transcodierung werden die erzeugten Ausgabedateien wieder im 
 Dieses Vorgehen entspricht einem typischen cloudbasierten Video-on-Demand-Workflow und verdeutlicht, wie Rechenressourcen, Speicher und Auslieferung in der Cloud getrennt voneinander eingesetzt werden.
 
 ![FFMPEG Encoding](../../assets/Versuch1/ffmpeg-coding.png)
-## AWS WebGUI
 
 ### Log-in
 
