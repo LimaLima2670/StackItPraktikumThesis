@@ -172,11 +172,10 @@ Der Transcoding-Prozess besteht aus vier klaren Schritten:
    Die transcodierte Videodatei wird wieder in den Object Storage hochgeladen und steht dort für die weitere Verarbeitung oder Auslieferung bereit.
 
 
-## Netzwerk erstellen
+## Netzwerk
 
-**Das virtuelle Netzwerk übernimmt in der Cloud eine vergleichbare Rolle wie ein lokales Netzwerk in einer klassischen IT-Infrastruktur.
-Es sorgt dafür, dass einzelne Komponenten, wie der Transcoder und der Objektspeicher, sicher und strukturiert miteinander kommunizieren können.
-Aus diesem Grund muss vor der Einrichtung der eigentlichen Rechenressourcen zunächst ein Netzwerk angelegt werden.**
+**Für dieses Praktikum ist bereits ein virtuelles Netzwerk vorhanden, das verwendet werden kann.
+Ein eigenes Netzwerk muss nicht erstellt werden..**
 
 **Bitte navigieren SIe an der linken Seite zu dem Reiter richtung Network:**
 
