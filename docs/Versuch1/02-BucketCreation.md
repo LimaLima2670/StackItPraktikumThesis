@@ -195,7 +195,7 @@ Eine separate Kopplung oder zusätzliche Konfiguration des Netzwerks ist nicht e
   margin: 14px 0;
 ">
   <span style="color:cyan; font-weight:bold; font-size:1.2em;">
-    Aufgabe:
+    **Aufgabe:**
   </span><br>
   Überprüfen Sie den Ihnen zugewiesenen Adressbereich, die konfigurierten DNS-Server sowie die Routing-Tabelle. Dokumentieren Sie Ihre Ergebnisse in der Abgabemappe.<br>
 </div>
