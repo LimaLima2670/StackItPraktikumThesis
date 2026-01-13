@@ -64,18 +64,19 @@ Diese werden später in der Kommandozeile verwendet.
 # 1. Zugangsdaten im STACKIT Portal erstellen
 
 
-1. Navigieren Sie zu:  
-   **Object Storage → Anmeldeinformationen & Gruppen**
+1. Navigieren Sie zu: Object Storage → Credentials & Groups
 
-![S3 Dashboard](../../assets/Versuch1/credentials.jpg)
+![S3 Dashboard](../../assets/Versuch1/credngru.jpg)
+
+2.In der Übersicht werden die vorhandenen Credential Groups angezeigt. Standardmäßig existiert bereits eine Gruppe mit dem Namen default.
+
+3. Öffnen Sie die Gruppe default, indem Sie diese anklicken.
+
+4. Wechseln Sie innerhalb der Gruppe in den Reiter Credentials.
+
+5. Klicken Sie auf Create Credentials und erstellen Sie neue Zugangsdaten.
 
 
-2. Klicken Sie auf **„Create Credentials Group“ und geben sie den Namen HDSNamen+ruleset**
-
-![S3 Dashboard](../../assets/Versuch1/ruleset.jpg)
-
-3. Bestätigen Sie die Erstellung.
- 
 
 Nach dem Erstellen werden **zwei Schlüssel angezeigt**:
 - **Access Key** (öffentlicher Schlüssel)
