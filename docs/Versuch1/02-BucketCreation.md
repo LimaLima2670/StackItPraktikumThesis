@@ -179,15 +179,9 @@ Ein eigenes Netzwerk muss nicht erstellt werden..**
 
 **Bitte navigieren SIe an der linken Seite zu dem Reiter richtung Network:**
 
-![S3 Dashboard](../../assets/Versuch1/network.jpg)
+![S3 Dashboard](../../assets/Versuch1/navinet.jpg)
 
-- **Klicken Sie auf Create Network**
-
-- **Es erscheint die folgende Maske**
-
-![S3 Dashboard](../../assets/Versuch1/networkcreate.jpg)
-
-**Geben Sie als Namen Ihren HDS-Namen + letzte 4 Nummern ihrer Matrikelnummer an**
+**Dort sollte nun ein bereits erstelltes Netzwerk zu sehen sein. Wählen Sie diese
 
 Also als Beispiel: **lelugoue4567**
 
