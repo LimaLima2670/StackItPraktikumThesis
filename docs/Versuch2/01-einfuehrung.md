@@ -84,7 +84,7 @@ Durch den Einsatz von Edge-Servern werden Ladezeiten reduziert und die Ausliefer
 
 
 
-## Cloud Computing und Edge Computing im Video-on-Demand-Kontext
+## Cloud Computing im Video-on-Demand-Kontext
 
 Das oben dargestellte Schaubild zeigt den grundlegenden Unterschied zwischen *Cloud Computing* und *Edge Computing*.  
 Beide Konzepte spielen auch bei der Auslieferung von Video-on-Demand-Inhalten eine wichtige Rolle.
