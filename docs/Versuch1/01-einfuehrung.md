@@ -15,6 +15,7 @@ Die Syntax des HDS-Namens entspricht derjenigen, die auch bei der Anmeldung im S
 
 Der HDS-Name wird im Verlauf der Versuche mehrfach verwendet und ist daher als fester Bestandteil der jeweiligen Konfigurationen zu verstehen. Änderungen des Namens während des Praktikums sind zu vermeiden, da dies die Zuordnung und Reproduzierbarkeit der Ergebnisse beeinträchtigen kann.
 
+![STACKIT Object Storage](../../assets/Versuch1/hdsname.jpg)
 
 
 
