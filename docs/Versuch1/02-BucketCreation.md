@@ -330,7 +330,7 @@ Einstellungen prüfen
 
 Nun sollten SIe ihren erstellten Server sehen können
 
-![S3 Dashboard](../../assets/Versuch1/serverup.jpg)
+![S3 Dashboard](../../assets/Versuch1/serverrunning.jpg)
 
 ## Zuweisung einer öffentlichen IP-Adresse zur virtuellen Maschine
 
