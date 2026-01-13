@@ -67,7 +67,7 @@ Diese werden später in der Kommandozeile verwendet.
 1. Navigieren Sie zu:  
    **Object Storage → Anmeldeinformationen & Gruppen**
 
-![S3 Dashboard](../../assets/Versuch1/Anmeldeinformation1.jpg)
+![S3 Dashboard](../../assets/Versuch1/credentials.jpg)
 
 
 2. Klicken Sie auf **„Anmeldeinformationen erstellen“**
