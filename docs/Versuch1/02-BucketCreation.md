@@ -288,9 +288,9 @@ Computing → Server
 
 **Navigieren Sie zu **Computing** / Server**
 
-![S3 Dashboard](../../assets/Versuch1/computingserver.jpg)
+![S3 Dashboard](../../assets/Versuch1/createserver.jpg)
 
-**Klicken Sie auf Server erstellen**
+**Klicken Sie auf Create Server**
 
 | Reiter | Ausfüllen mit... | 
 |----------|----------|
