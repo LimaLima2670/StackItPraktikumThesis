@@ -74,6 +74,9 @@ Diese werden später in der Kommandozeile verwendet.
 
 4. Wechseln Sie innerhalb der Gruppe in den Reiter Credentials.
 
+![S3 Dashboard](../../assets/Versuch1/crediz.jpg)
+
+
 5. Klicken Sie auf Create Credentials und erstellen Sie neue Zugangsdaten.
 
 
