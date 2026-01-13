@@ -34,7 +34,7 @@ Dazu wird der **STACKIT Object Storage** verwendet, ein S3-kompatibler Objektspe
 
 ![S3 Dashboard](../../assets/Versuch1/testme.jpg)
 
-**Die Namensvergabe soll nach einem einhitlichen Standard erfolgen:  <span style="color:orange; font-weight:bold; font-size:1.2em;">[namenachname-Letzten 4 Ziffern Ihrer Matrikelnummer]. Beispiel: [maxmustermann-4567]**  </span><br>
+**Die Namensvergabe soll nach einem einhitlichen Standard erfolgen:  <span style="color:orange; font-weight:bold; font-size:1.2em;">[HDSNAME-Letzten 4 Ziffern Ihrer Matrikelnummer]. Beispiel: [lelugoue-4567]**  </span><br>
 
 
 <div style="
