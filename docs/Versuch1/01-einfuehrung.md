@@ -71,5 +71,4 @@ Zur Anmeldung auf StackIT gelangt man über diesen Link: https://portal.stackit.
 
 **Auf der Landingpage sollte in der oberen Leiste das richtige Projekt und die region EU01 - (Deutschland Süd) ausgewählt werden. Hierfür sollte für Sie bereits ein Projekt vorhanden sein, welches Ihren HDS-Namen beinhaltet**
 
-![AWS WebGUI](../../assets/Versuch1/aws_dashboard.png)
 
