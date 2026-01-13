@@ -178,9 +178,9 @@ Der Transcoding-Prozess besteht aus vier klaren Schritten:
 Es sorgt dafür, dass einzelne Komponenten, wie der Transcoder und der Objektspeicher, sicher und strukturiert miteinander kommunizieren können.
 Aus diesem Grund muss vor der Einrichtung der eigentlichen Rechenressourcen zunächst ein Netzwerk angelegt werden.**
 
-**Bitte navigieren SIe an der linken Seite zu dem Reiter richtung Netzwerk:**
+**Bitte navigieren SIe an der linken Seite zu dem Reiter richtung Network:**
 
-![S3 Dashboard](../../assets/Versuch1/Netzwerk.jpg)
+![S3 Dashboard](../../assets/Versuch1/network.jpg)
 
 **Klicken Sie auf Netzwerk erstellen**
 
