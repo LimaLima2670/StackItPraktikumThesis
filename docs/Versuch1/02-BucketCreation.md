@@ -346,7 +346,7 @@ Navigieren Sie im linken Menü des Servers zu:
 
 Network → Public IP Address
 
-![S3 Dashboard](../../assets/Versuch1/securitygroups.jpg)
+![S3 Dashboard](../../assets/Versuch1/connip.jpg)
 
 
 Diese muss zu guter letzt einfach nur noch mit dem Server verbunden werden:
