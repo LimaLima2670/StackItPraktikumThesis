@@ -182,7 +182,7 @@ Falls dies nicht der Fall ist, können die Zugangsdaten jederzeit erneut erstell
 Eine Anleitung dazu finden Sie im vorherigen Kapitel. 🙂
 </div>
 
-![S3 Dashboard](../../assets/Versuch1/awskeys.jpg)
+![S3 Dashboard](../../assets/Versuch1/awskeys1.jpg)
 
 ### Test des Zugriffs auf den Object Storage von StackIT
 
