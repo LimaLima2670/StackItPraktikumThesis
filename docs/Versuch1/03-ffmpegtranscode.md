@@ -138,7 +138,7 @@ s3cmd --version
 **Nun geht es an das Konfigurieren, hierfür benötigen wir den Befehl:**
 
 ```bash
-s3cmd configure
+s3cmd --configure
 ```
 
 **Hier werden seriell der Accesskey und Secret Acceskey abgefragt, sowie Default Region Name und Default Output Format**
