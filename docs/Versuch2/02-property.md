@@ -188,10 +188,7 @@ nano public-read.json
 
 
 ```bash
-aws s3api put-bucket-policy \
-  --bucket <DeinBucketname> \
-  --policy file://public-read.json \
-  --endpoint-url https://object.storage.eu01.onstackit.cloud
+s3cmd setpolicy public-read.json s3://<DeinBucketname>
 ```
 
 
