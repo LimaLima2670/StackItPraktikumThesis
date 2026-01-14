@@ -294,8 +294,7 @@ cat hls_output/master.m3u8
 
 **Die Ausgabe sieht danach dann so aus:**
 
-![S3 Dashboard](catinfo.jpg)
-
+![S3 Dashboard](../../assets/Versuch1/catinfo1.jpg)
 
 <div style="
   border: 2px solid #ffffff;
