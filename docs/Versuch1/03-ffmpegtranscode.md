@@ -103,22 +103,26 @@ sudo apt install ffmpeg -y
 
 Nachdem die virtuelle Maschine vorbereitet und die Transcoding-Software installiert wurde, muss sie nun selbstständig auf den Object Storage zugreifen können. Dazu wird auf der VM die bereits bekannte S3-kompatible Schnittstelle verwendet. Die virtuelle Maschine übernimmt damit aktiv die Rolle des Transcoders und greift direkt auf die im Object Storage abgelegten Quelldateien zu.
 
-### Konfiguration der AWS CLI auf der virtuellen Maschine
-Nutzung der S3-kompatiblen Schnittstelle bei STACKIT
+
+### Nutzung der S3-kompatiblen Schnittstelle mit s3cmd
 
 STACKIT stellt für den Object Storage keine eigenen, vollwertigen Client-Werkzeuge bereit, wie sie beispielsweise von großen Hyperscalern angeboten werden. Die Verwaltung des Object Storage erfolgt primär über die Weboberfläche des STACKIT Control Centers, in der grundlegende Aufgaben wie das Anlegen von Buckets oder das Erstellen von Zugangsdaten durchgeführt werden können.
 
-Für den eigentlichen Datentransfer sowie für automatisierte Workflows setzt STACKIT jedoch bewusst auf eine S3-kompatible Schnittstelle. Diese Schnittstelle orientiert sich an der weit verbreiteten Amazon-S3-API und hat sich als De-facto-Standard für objektbasierten Cloud-Speicher etabliert. Durch diesen Ansatz können bestehende, etablierte Werkzeuge genutzt werden, ohne an proprietäre Clients gebunden zu sein.
+Für den Datentransfer sowie für automatisierte Workflows stellt STACKIT eine **S3-kompatible Schnittstelle** bereit. Diese orientiert sich an der weit verbreiteten Amazon-S3-API, die sich als De-facto-Standard für objektbasierten Cloud-Speicher etabliert hat. Durch diesen Ansatz können etablierte, herstellerunabhängige Werkzeuge eingesetzt werden.
 
-Im Rahmen dieses Versuchs wird daher die AWS Command Line Interface (AWS CLI) eingesetzt. Die AWS CLI fungiert hierbei ausschließlich als technischer Client zur Kommunikation mit der S3-kompatiblen API und ist nicht an einen bestimmten Cloud-Anbieter gebunden. Der Zugriff erfolgt explizit über den STACKIT-Endpoint, sodass keine AWS-Infrastruktur genutzt wird. Da STACKIT Object Storage kompatibel zur Amazon-S3-API ist, kann hierfür die **AWS Command Line Interface (AWS CLI)** verwendet werden.
-Die Installation erfolgt über den Paketmanager des Betriebssystems. Führen Sie dazu auf der virtuellen Maschine folgenden Befehl aus:
+Im Rahmen dieses Versuchs wird ausschließlich das Open-Source-Werkzeug **s3cmd** verwendet.  
+`s3cmd` dient hierbei als technischer Client zur Kommunikation mit der S3-kompatiblen Schnittstelle von STACKIT. Der Zugriff erfolgt explizit über den STACKIT-Endpoint, es wird **keine AWS-Infrastruktur** genutzt.
 
+---
 
-**Führen Sie auf der virtuellen Maschine folgenden Befehl aus:**
+### Installation von s3cmd
+
+Installieren Sie `s3cmd` über den Paketmanager des Betriebssystems:
 
 ```bash
-sudo snap install aws-cli --classic
+sudo apt install s3cmd
 ```
+
 
 **Folgende Ausgabe sollte daraus erfolgen:**
 
@@ -128,16 +132,40 @@ sudo snap install aws-cli --classic
 **Prüfen Sie die Installation bitte mit folgendem Befehl**
 
 ```bash
-aws --version
+s3cmd --version
 ```
 
 **Nun geht es an das Konfigurieren, hierfür benötigen wir den Befehl:**
 
 ```bash
-aws configure
+s3cmd configure
 ```
 
 **Hier werden seriell der Accesskey und Secret Acceskey abgefragt, sowie Default Region Name und Default Output Format**
+
+**Die Ausgabe sollte so aussehen:**
+
+```bash
+Enter new values or accept defaults in brackets with Enter.
+Refer to user manual for detailed description of all options.
+
+Access key and Secret key are your identifiers for Amazon S3. Leave them empty for using the env variables.
+Access Key: **IHR PUBLICKEY**
+Secret Key: **IHR Privatekey**
+Default Region [US]: eu01
+
+Use "s3.amazonaws.com" for S3 Endpoint and not modify it to the target Amazon S3.
+S3 Endpoint [s3.amazonaws.com]: object.storage.eu01.onstackit.cloud
+
+
+
+
+
+
+
+
+
+
 
 <div style="
   border: 2px solid #ffffff;
