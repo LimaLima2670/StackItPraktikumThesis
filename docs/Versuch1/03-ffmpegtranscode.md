@@ -204,8 +204,9 @@ Im nächsten Schritt wird die im Object Storage abgelegte Videodatei auf die vir
 Der Download erfolgt über die AWS CLI mit folgendem Befehl. Dieser Befehl muss **direkt auf der virtuellen Maschine** ausgeführt werden:
 
 ```bash
-aws s3 cp s3://<DEINBUCKETNAME>/testvideo.mp4 ./testvideo.mp4 \
---endpoint-url https://object.storage.eu01.onstackit.cloud
+s3cmd get s3://<DEINBUCKETNAME>/testvideo.mp4 ./testvideo.mp4 \
+  --host=object.storage.eu01.onstackit.cloud \
+  --host-bucket="%(bucket).object.storage.eu01.onstackit.cloud"
 ```
 **Folgendes Ergebis ist zu erwarten:**
 
