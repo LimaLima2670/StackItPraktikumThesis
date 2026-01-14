@@ -126,7 +126,7 @@ sudo apt install s3cmd
 
 **Folgende Ausgabe sollte daraus erfolgen:**
 
-![S3 Dashboard](../../assets/Versuch1/awsvm.jpg)
+![S3 Dashboard](../../assets/Versuch1/s3cmddone.jpg)
 
 
 **Prüfen Sie die Installation bitte mit folgendem Befehl**
