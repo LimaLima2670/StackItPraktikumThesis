@@ -106,22 +106,7 @@ Die Videodateien liegen zentral in der Cloud vor und dienen als Ursprung (Origin
 Würde ein Endnutzer direkt auf diesen Cloud-Speicher zugreifen, müsste jede Anfrage bis zum zentralen Rechenzentrum weitergeleitet werden.  
 Dies kann zu höheren Ladezeiten und einer stärkeren Belastung des Speichers führen.
 
----
 
-### Edge Computing
-
-Beim Edge Computing wird die Verarbeitung näher an den Endnutzer verlagert.  
-Im Kontext eines CDNs übernehmen sogenannte *Edge-Server* diese Aufgabe.
-
-Für Video-on-Demand bedeutet das:
-- Die Videos werden einmal vom Origin geladen  
-- Anschließend werden sie auf Edge-Servern zwischengespeichert  
-- Weitere Nutzeranfragen werden direkt vom nächstgelegenen Edge-Server beantwortet  
-
-Fastly nutzt dieses Prinzip, indem Inhalte möglichst nah am Standort des Nutzers ausgeliefert werden.  
-Die eigentliche Berechnung bzw. Auslieferung findet somit nicht mehr ausschließlich in der zentralen Cloud statt, sondern verteilt an vielen Standorten weltweit.
-
----
 
 ### Bedeutung für diesen Versuch
 
@@ -130,8 +115,6 @@ In diesem Versuch wird das Zusammenspiel beider Konzepte deutlich:
 - **Cloud Computing:**  
   STACKIT Object Storage dient als zentraler Speicherort für die transcodierten Mediendateien.
 
-- **Edge Computing:**  
-  Fastly übernimmt die Auslieferung der Videos über seine Edge-Server und reduziert so Latenzen und Last auf dem Origin.
 
 Dieses Zusammenspiel ist typisch für moderne Video-on-Demand-Systeme.  
 Die Cloud stellt die Inhalte bereit, während das CDN mit Edge Computing für eine schnelle, skalierbare und zuverlässige Auslieferung an Endnutzer sorgt.
