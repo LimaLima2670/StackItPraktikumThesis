@@ -228,10 +228,10 @@ Speichern Sie den privaten Schlüssel lokal auf Ihrem Rechner, z. B. unter folge
 priv-key-stackit.pk
 ```
 
-3. Bestätigen Sie alle Rückfragen mit **Enter** (Standardpfad und kein Passwort).
+Nun wird derSchlüssel standardmäßig im Ordner  
 
-Der Schlüssel wird standardmäßig im Ordner  
 `C:\Users\<Benutzername>\.ssh\`  
+
 gespeichert.
 
 #### Schritt 2: Öffentlichen Schlüssel anzeigen
