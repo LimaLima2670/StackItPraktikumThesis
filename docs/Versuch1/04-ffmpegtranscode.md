@@ -11,7 +11,7 @@ Die virtuelle Maschine übernimmt dabei die Rolle eines dedizierten Rechenknoten
 Zunächst wird eine Verbindung zur zuvor erstellten virtuellen Maschine hergestellt. Der Zugriff erfolgt über das Secure Shell Protokoll (SSH).
 
 ```bash
-ssh ubuntu@<PUBLIC-IP-DER-VM>
+ssh -i <PFAD_ZUM_PRIVATE_KEY> ubuntu@<PUBLIC-IP-DER-VM>
 ```
 <div style="
   border: 2px solid #ffffff;
