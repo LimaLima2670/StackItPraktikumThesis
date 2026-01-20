@@ -226,11 +226,11 @@ Nachdem der virtuellen Maschine eine öffentliche IP-Adresse zugewiesen wurde, k
 Vor dem eigentlichen Login wird geprüft, ob der Server über den SSH-Port erreichbar ist. Dazu wird auf dem lokalen Rechner folgendes Kommando ausgeführt:
 
 ```bash
-Test-NetConnection <IP  des Netzwerkes> -Port 22
+ssh ubuntu@<öffentliche-IP-Adresse>
 ```
 Folgende Ausgabe ist hierbei zu erwarten:
 
-![S3 Dashboard](../../assets/Versuch1/cmdtest.jpg)
+![S3 Dashboard](../../assets/Versuch1/sshtest.jpg)
 
 
 
