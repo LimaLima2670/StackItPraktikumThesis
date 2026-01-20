@@ -96,9 +96,9 @@ Da der Upload von Dateien **nicht über die Weboberfläche** erfolgt, wird in di
 
 ### Voraussetzungen für den Upload
 
-Für den Upload wird die **AWS CLI** benötigt.
+Für den Upload wird das **s3 cmd Tool** benötigt.
 
-- Download: https://aws.amazon.com/cli/
+- Download: https://s3tools.org/s3cmd
 - Installation mit **Standard-Einstellungen** durchführen
 - Nach der Installation ein **neues Terminal / Eingabeaufforderung** öffnen
 
