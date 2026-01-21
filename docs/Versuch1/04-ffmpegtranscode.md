@@ -211,7 +211,7 @@ s3cmd get s3://<DEINBUCKETNAME>/testvideo.mp4 ./testvideo.mp4 \
 ```
 **Folgendes Ergebis ist zu erwarten:**
 
-![S3 Dashboard](../../assets/Versuch1/downloadtovm.jpg)
+![S3 Dashboard](../../assets/Versuch1/s3cmddownload.jpg)
 
 **Auch hier gilt wieder testen:**
 
