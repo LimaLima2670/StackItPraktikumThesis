@@ -202,7 +202,9 @@ Im nächsten Schritt wird die im Object Storage abgelegte Videodatei auf die vir
 
 ### Kopieren der Datei aus dem Object Storage
 
-Der Download erfolgt über die AWS CLI mit folgendem Befehl. Dieser Befehl muss **direkt auf der virtuellen Maschine** ausgeführt werden:
+Der Download erfolgt mithilfe von s3cmd.
+Die für den Zugriff auf den STACKIT Object Storage benötigten Endpoint-Parameter wurden zuvor im Rahmen der Konfiguration (s3cmd --configure) hinterlegt.
+Der folgende Befehl muss direkt auf der virtuellen Maschine ausgeführt werden:
 
 ```bash
 s3cmd get s3://<DEINBUCKETNAME>/testvideo.mp4 ./testvideo.mp4 \
