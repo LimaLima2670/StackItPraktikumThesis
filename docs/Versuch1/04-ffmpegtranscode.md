@@ -261,20 +261,25 @@ Videosegmente.
 
 ```bash
 ffmpeg -i testvideo.mp4 \
--map 0:v -map 0:a \
--c:v libx264 -preset veryfast \
--c:a aac -b:a 128k \
--f hls \
--hls_time 4 \
--hls_playlist_type vod \
--hls_segment_filename "hls_output/segment_%03d.ts" \
-hls_output/master.m3u8
+  -map 0:v:0 -map 0:a:0 \
+  -map 0:v:0 -map 0:a:0 \
+  -map 0:v:0 -map 0:a:0 \
+  -c:v libx264 -profile:v main -crf 20 \
+  -c:a aac -ar 48000 \
+  -filter:v:0 scale=854:480  -b:v:0 1200k -maxrate:v:0 1300k -bufsize:v:0 2600k \
+  -filter:v:1 scale=1280:720 -b:v:1 3000k -maxrate:v:1 3300k -bufsize:v:1 6600k \
+  -filter:v:2 scale=1920:1080 -b:v:2 5500k -maxrate:v:2 6000k -bufsize:v:2 12000k \
+  -var_stream_map "v:0,a:0,name:480p v:1,a:1,name:720p v:2,a:2,name:1080p" \
+  -f hls -hls_time 4 -hls_playlist_type vod \
+  -hls_flags independent_segments \
+  -master_pl_name master.m3u8 \
+  hls_output/stream_%v.m3u8
 ```
 
 
 **Sie sollten sowas in etwa sehen:**
 
-![S3 Dashboard](../../assets/Versuch1/manifeestcreated.jpg)
+![S3 Dashboard](../../assets/Versuch1/hlsladder.jpg)
 
 **Danach kann geprüft werden ob die Manifestdateien wirklich angelegt worden sind:**
 
