@@ -329,9 +329,9 @@ erstellten Buckets kopiert.
 Upload der HLS-Dateien
 
 ```bash
-aws s3 cp hls_output/ s3://<DEINBUCKETNAME>/hls/ \
---recursive \
---endpoint-url https://object.storage.eu01.onstackit.cloud
+s3cmd sync hls_output/ s3://<DEINBUCKETNAME>/hls/ \
+  --host=object.storage.eu01.onstackit.cloud \
+  --host-bucket="%(bucket).object.storage.eu01.onstackit.cloud"
 ```
 
 Dabei werden sowohl die Manifestdatei (master.m3u8) als auch alle zugehörigen
