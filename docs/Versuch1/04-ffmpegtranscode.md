@@ -191,8 +191,9 @@ Nach der erfolgreichen Konfiguration wird überprüft, ob die virtuelle Maschine
 **Bitte geben sie folgendne Befehl in die VM Console ein:**  
 
 ```bash
-aws s3 ls s3://<DEINBUCKETNAME> \
---endpoint-url https://object.storage.eu01.onstackit.cloud
+s3cmd ls s3://<DEINBUCKETNAME> \
+  --host=object.storage.eu01.onstackit.cloud \
+  --host-bucket="%(bucket).object.storage.eu01.onstackit.cloud"
 ```
 
 ## Download der Videodatei auf die virtuelle Maschine
