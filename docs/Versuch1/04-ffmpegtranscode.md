@@ -432,14 +432,17 @@ ls -lh testvideo_*p.mp4
 **Die transcodierten Dateien werden nun nacheinander in den zuvor erstellten Bucket hochgeladen:**
 
 ```bash
-aws s3 cp testvideo_1080p.mp4 s3://<DEINBUCKETNAME>/ \
---endpoint-url https://object.storage.eu01.onstackit.cloud
+s3cmd put testvideo_1080p.mp4 s3://<DEINBUCKETNAME>/ \
+  --host=object.storage.eu01.onstackit.cloud \
+  --host-bucket="%(bucket).object.storage.eu01.onstackit.cloud"
 
-aws s3 cp testvideo_720p.mp4 s3://<DEINBUCKETNAME>/ \
---endpoint-url https://object.storage.eu01.onstackit.cloud
+s3cmd put testvideo_720p.mp4 s3://<DEINBUCKETNAME>/ \
+  --host=object.storage.eu01.onstackit.cloud \
+  --host-bucket="%(bucket).object.storage.eu01.onstackit.cloud"
 
-aws s3 cp testvideo_480p.mp4 s3://<DEINBUCKETNAME>/ \
---endpoint-url https://object.storage.eu01.onstackit.cloud
+s3cmd put testvideo_480p.mp4 s3://<DEINBUCKETNAME>/ \
+  --host=object.storage.eu01.onstackit.cloud \
+  --host-bucket="%(bucket).object.storage.eu01.onstackit.cloud"
 ```
 
 <div style="
