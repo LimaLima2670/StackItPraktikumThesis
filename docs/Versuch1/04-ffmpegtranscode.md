@@ -261,21 +261,44 @@ Videosegmente.
 
 ```bash
 ffmpeg -i testvideo.mp4 \
-  -map 0:v:0 -map 0:a:0 \
-  -map 0:v:0 -map 0:a:0 \
-  -map 0:v:0 -map 0:a:0 \
+  -map 0:v:0 \
+  -map 0:v:0 \
+  -map 0:v:0 \
   -c:v libx264 -profile:v main -crf 20 \
-  -c:a aac -ar 48000 \
   -filter:v:0 scale=854:480  -b:v:0 1200k -maxrate:v:0 1300k -bufsize:v:0 2600k \
   -filter:v:1 scale=1280:720 -b:v:1 3000k -maxrate:v:1 3300k -bufsize:v:1 6600k \
   -filter:v:2 scale=1920:1080 -b:v:2 5500k -maxrate:v:2 6000k -bufsize:v:2 12000k \
-  -var_stream_map "v:0,a:0,name:480p v:1,a:1,name:720p v:2,a:2,name:1080p" \
+  -var_stream_map "v:0,name:480p v:1,name:720p v:2,name:1080p" \
   -f hls -hls_time 4 -hls_playlist_type vod \
   -hls_flags independent_segments \
   -master_pl_name master.m3u8 \
   hls_output/stream_%v.m3u8
 ```
 
+**Was genau bewirkt der Befehl?**
+Der ausgeführte FFmpeg-Befehl erzeugt aus der Eingabedatei testvideo.mp4 mehrere Versionen desselben Videos mit unterschiedlichen Qualitätsstufen. Diese Gesamtheit der Varianten wird als HLS Bitrate-Ladder bezeichnet.
+
+Im vorliegenden Befehl wird der Videostream der Quelldatei dreimal verwendet **(-map 0:v:0)**. Jede dieser Kopien wird anschließend separat verarbeitet: Eine Variante wird auf **480p** skaliert, eine auf **720p** und eine auf **1080p.** Gleichzeitig werden für jede Auflösung passende Zielbitraten definiert, sodass jede Version eine eigene, klar abgegrenzte Qualitätsstufe darstellt.
+
+Mithilfe der Option **-var_stream_map** werden diese Varianten logisch zusammengefasst. FFmpeg erzeugt daraus automatisch eine zentrale Master-Playlist **(master.m3u8)** sowie jeweils eine eigene Playlist und Segmentdateien pro Qualitätsstufe.
+
+Ein HLS-Player kann anhand dieser Struktur während der Wiedergabe zwischen den erzeugten Varianten wechseln und so die Videoqualität an die aktuelle Netzwerkverbindung anpassen. Der Transcoding-Schritt bildet damit die technische Grundlage für adaptives Streaming im Video-on-Demand-Workflow.
+
+Die folgenden Optionen definieren für jede erzeugte Rendition sowohl die Zielauflösung als auch das Bitratenverhalten des Videos:
+
+```bash
+-filter:v:0 scale=854:480  -b:v:0 1200k -maxrate:v:0 1300k -bufsize:v:0 2600k
+-filter:v:1 scale=1280:720 -b:v:1 3000k -maxrate:v:1 3300k -bufsize:v:1 6600k
+-filter:v:2 scale=1920:1080 -b:v:2 5500k -maxrate:v:2 6000k -bufsize:v:2 12000k
+```
+
+Für jede Qualitätsstufe wird das Video zunächst mit scale auf eine feste Zielauflösung umgerechnet. Dadurch entstehen drei klar voneinander getrennte Versionen des Inhalts, die für unterschiedliche Endgeräte und Bildschirmgrößen geeignet sind.
+
+Die Option -b:v legt die angestrebte durchschnittliche Videobitrate der jeweiligen Rendition fest. Niedrigere Auflösungen erhalten bewusst geringere Bitraten, während höhere Auflösungen entsprechend mehr Bandbreite nutzen dürfen. Dadurch bleibt das Verhältnis zwischen Bildqualität und Datenrate ausgewogen.
+
+Mit -maxrate wird eine Obergrenze für kurzfristige Bitratenspitzen definiert. Diese Begrenzung ist insbesondere für Streaming relevant, da starke Bitratenschwankungen zu Pufferproblemen beim Client führen können.
+
+Der Parameter -bufsize beschreibt die Größe des Rate-Control-Puffers und bestimmt, über welchen Zeitraum Bitratenschwankungen ausgeglichen werden dürfen. In Kombination mit -b:v und -maxrate sorgt dieser Mechanismus für ein gleichmäßiges und vorhersagbares Bitratenverhalten der HLS-Segmente.
 
 **Sie sollten sowas in etwa sehen:**
 
