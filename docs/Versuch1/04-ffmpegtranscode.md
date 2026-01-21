@@ -343,8 +343,9 @@ Um zu prüfen, ob die Dateien erfolgreich im Object Storage abgelegt wurden,
 wird der Inhalt des Zielverzeichnisses aufgelistet:
 
 ```bash
-aws s3 ls s3://<DEINBUCKETNAME>/hls/ \
---endpoint-url https://object.storage.eu01.onstackit.cloud
+s3cmd ls s3://<DEINBUCKETNAME>/hls/ \
+  --host=object.storage.eu01.onstackit.cloud \
+  --host-bucket="%(bucket).object.storage.eu01.onstackit.cloud"
 ```
 
 In der Ausgabe sollten nun sowohl die Manifestdatei als auch mehrere
